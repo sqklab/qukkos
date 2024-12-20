@@ -1,0 +1,6 @@
+{
+  "bundle.symbolic_name" : "qukkos_unitary_token",
+  "bundle.activator" : true,
+  "bundle.name" : "Unitary Matrix to Qasm Token Collector",
+  "bundle.description" : ""
+}

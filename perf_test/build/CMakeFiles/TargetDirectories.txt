@@ -1,0 +1,2 @@
+/Users/lucas/workspace/kokkos/core/perf_test/build/CMakeFiles/edit_cache.dir
+/Users/lucas/workspace/kokkos/core/perf_test/build/CMakeFiles/rebuild_cache.dir

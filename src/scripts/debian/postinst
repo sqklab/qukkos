@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set +x 
+
+ln -s /usr/local/aideqc/qukkos/bin/qukkos /usr/bin/
+ln -s /usr/local/aideqc/qukkos/bin/qukkos-mlir-tool /usr/bin/
+/usr/local/aideqc/llvm/bin/clang++ -std=c++17 -x c++-header \
+   /usr/local/aideqc/qukkos/include/qukkos/qukkos_lang_ext.hpp \
+   -o /usr/local/aideqc/qukkos/include/qukkos/qukkos_lang_ext.hpp.pch \
+   -I ${XACC_ROOT}/include/xacc -I ${XACC_ROOT}/include/qukkos \
+   -I ${XACC_ROOT}/include/eigen @EXTRA_INCLUDE@

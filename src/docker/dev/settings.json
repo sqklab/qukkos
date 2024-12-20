@@ -1,0 +1,11 @@
+{
+    "cpp.buildConfigurations": [{
+        "name": "xacc",
+        "directory": "/home/project/xacc/build"
+    },
+    {
+	"name": "qukkos",
+	"directory": "/home/project/qukkos/build"
+    }
+    ]
+}

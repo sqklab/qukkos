@@ -1,0 +1,23 @@
+@startuml
+
+class clang::SyntaxHandler {
+    
+    + GetReplacement()
+    
+
+}
+
+class qukkos::QUKKOSSyntaxHandler 
+
+class qukkos::TokenCollector 
+
+class qukkos::XasmTokenCollector
+class qukkos::OpenQasmTokenCollector
+
+clang::SyntaxHandler <|-- qukkos::QUKKOSSyntaxHandler
+qukkos::TokenCollector <-- qukkos::QUKKOSSyntaxHandler 
+
+qukkos::TokenCollector <|-- qukkos::XasmTokenCollector
+qukkos::TokenCollector <|-- qukkos::OpenQasmTokenCollector
+
+@enduml
